@@ -5,6 +5,7 @@ public class AddGrade
 	
 	
 	private String subject;
+	ControlRoom cr1 = new ControlRoom();
 	 Grade g1= new Grade(75,80,80,78);
 	 Scanner scanner = new Scanner(System.in);
 	 private void loopMethod(String subject) 
@@ -31,8 +32,9 @@ public class AddGrade
 	 
 	 public void setMarks()
 	 {
-		 subject=scanner.next();
 		 
+		 subject=scanner.next();
+	   
 		 if(subject.equals("m"))
 		 {
 		       loopMethod("m");
@@ -51,6 +53,7 @@ public class AddGrade
 		 {
 			 loopMethod("c");		  
 		 }
+		
 	 }
 	 
 	 
