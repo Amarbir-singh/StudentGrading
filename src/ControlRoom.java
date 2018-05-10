@@ -22,6 +22,7 @@ public class ControlRoom
 	   {
 		   String pointer1;
 		   AddGrade ag1 = new AddGrade();
+		   Total t1 = new Total();
 		   do
 		   {
 		    System.out.println("To enter the marks enter \nfor math 'm'\nfor english 'e'\nfor physics 'p'\nfor chemistry 'c'");
@@ -30,7 +31,8 @@ public class ControlRoom
 	        pointer1 = scanner.next();
 		   }while(pointer1.equals("other"));
 	       
-	       System.out.println(ag1.getMarks());
+	       System.out.println(ag1.getMarks());//print elements individually
+	       System.out.println(t1.getTotal());
 	   }
 	   else if(pointer.equals("c"))
 	   {

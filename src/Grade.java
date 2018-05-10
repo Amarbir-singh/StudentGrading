@@ -6,9 +6,18 @@ public class Grade
    public LinkedList<Object> linkedList2 = new LinkedList<Object>();
    public LinkedList<Object> linkedList3 = new LinkedList<Object>();
    public LinkedList<Object> linkedList4 = new LinkedList<Object>();
+   int math;
+   int english;
+   int physics;
+   int chemistry;
    
-   
- 
+ public Grade()
+ {
+	  math = 0;
+	  english = 0;
+	  physics = 0;
+	  chemistry = 0;
+}
 public Grade(int math, int english, int physics, int chemistry)
 {
 	// TODO Auto-generated constructor stub
