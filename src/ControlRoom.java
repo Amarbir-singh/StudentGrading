@@ -5,12 +5,8 @@ public class ControlRoom
 	
    public static void main(String[] args)
    {
-	  
-	   control();
-
-	   
-	  
-   }
+	     control();
+	}
    public static void control()
    {
 	   Scanner scanner = new Scanner(System.in);
@@ -23,7 +19,6 @@ public class ControlRoom
 	   }
 	   else if(pointer.equals("g"))
 	   {
-		   
 		   AddGrade ag1 = new AddGrade();
 		   System.out.println("To enter the marks enter \nfor math 'm'\nfor english 'e'\nfor physics 'p'\nfor chemistry 'c'");
 	       ag1.setMarks();

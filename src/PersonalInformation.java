@@ -4,11 +4,12 @@ public class PersonalInformation
 {
 	ControlRoom cr1 = new ControlRoom();
 	Scanner scanner = new Scanner(System.in);
+	String pointer;
 	void getID()
 	{
 		do
 		{
-	      System.out.print("For the address -\n Enter 'A'\n Email Adress 'E' -\nSocial Security Number 'S'- ");
+	      System.out.print("For the address -\n Enter 'a'\n Email Adress 'e' -\nSocial Security Number 's'- ");
 	      String pe = scanner.next();
 	      if(pe.equals("a"))
 	      {
@@ -26,13 +27,11 @@ public class PersonalInformation
 	      {
 	    	return;//use go to statement here later to go to back to the main program 
 	      }
-	      
-	      
 	      System.out.println("For more information enter 'next'");
 	      System.out.println("To return back to main window enter 'back'");
-	      String pointer = scanner.next();
+	       pointer = scanner.next();
 	      if(pointer.equals("back"))
 	    	 ControlRoom.control();
-		}while(scanner.next().equals("next"));
+		}while(pointer.equals("next"));
 	}
 }
